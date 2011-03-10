@@ -5,7 +5,7 @@ A simple example how to run a [node](http://nodejs.org) service on a server usin
 
 ## Deploying the node service
 
-We assume that node is installed as `/usr/loca/bin/node` and our node service behaves like this:
+We assume that node is installed as `/usr/local/bin/node` and our node service behaves like this:
 
 - The service should be called `node-service`
 - The server script is `/home/node/node-service/server.js`
@@ -13,7 +13,7 @@ We assume that node is installed as `/usr/loca/bin/node` and our node service be
 - Output should be appended to `/var/log/node-service.log`
 
 
-## Starting/stopping with init.d
+## Starting / stopping with init.d
 
 A simple init.d script for the node-service is provided at `init.d/node-service`.
 
@@ -112,3 +112,8 @@ To start/stop the node-service without Monit complaining about it, just use
 
     # monit start node-service
     # monit stop node-service
+
+
+## References
+
+The init.d script is based on the one by [Peter Horst](http://www.oghme.com/) on https://gist.github.com/715255
