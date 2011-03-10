@@ -1,0 +1,10 @@
+set daemon 30
+set logfile /var/log/monit.log
+
+# set mailserver localhost
+# set mail-format { from: root@example.com }
+# set alert root@example.com
+
+set httpd port 2812 and
+	use address localhost
+	allow localhost
