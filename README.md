@@ -36,6 +36,8 @@ and terminate it with
 
     # /etc/init.d/node-service stop
 
+Note: the server is not restarted if it crashes. This is a bit tricky with SysVinit, see the [node-init](https://github.com/nicokaiser/node-init) repository for a solution.
+
 
 ## Monitoring with Monit
 
@@ -117,3 +119,10 @@ To start/stop the node-service without Monit complaining about it, just use
 ## References
 
 The init.d script is based on the one by [Peter Horst](http://www.oghme.com/) on https://gist.github.com/715255
+
+You can find a newer version for init.d at my [node-init](https://github.com/nicokaiser/node-init) repository.
+
+
+## License
+
+[MIT License](LICENSE.md)
